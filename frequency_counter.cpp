@@ -1,11 +1,11 @@
 #include "frequency_counter.h"
 #include <iostream>
 
-FrequencyCounter::FrequencyCounter() : presence_flags(MAX_VALUE + 1, false) {}
+FrequencyCounter::FrequencyCounter() : frequency_vector(MAX_VALUE + 1) {}
 
 void FrequencyCounter::add_number(int num) {
     if (num >= 0 && num <= MAX_VALUE) {
-        presence_flags[num] = true;
+        frequency_vector[num]++;
     }
 }
 
@@ -14,7 +14,7 @@ void FrequencyCounter::print_unique_sorted() const {
     bool first = true;
 
     for (int i = 0; i <= MAX_VALUE; ++i) {
-        if (presence_flags[i]) {
+        if (frequency_vector[i] > 0) {
             if (!first) {
                 std::cout << " ";
             }

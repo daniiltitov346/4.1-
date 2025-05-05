@@ -1,5 +1,5 @@
 ﻿  4.1b.cpp
-C:\Users\Huawei\source\repos\4.1b\4.1b\4.1b.cpp(39,29): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
   frequency_counter.cpp
+C:\Users\Huawei\source\repos\4.1b\4.1b\4.1b.cpp(39,29): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
   Создание кода...
   4.1b.vcxproj -> C:\Users\Huawei\source\repos\4.1b\x64\Debug\4.1b.exe
